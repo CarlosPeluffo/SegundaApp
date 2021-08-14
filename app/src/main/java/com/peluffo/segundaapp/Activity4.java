@@ -23,6 +23,7 @@ public class Activity4 extends AppCompatActivity {
     private void accederContactos(){
         TVContactos = findViewById(R.id.TVContactos);
         StringBuilder sb = new StringBuilder();
+        // Acceder a los contactos
         Uri contactos = ContactsContract.Contacts.CONTENT_URI ;
         ContentResolver cr = getContentResolver();
         Cursor c = cr.query(contactos,
